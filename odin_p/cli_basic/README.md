@@ -2,6 +2,8 @@
 
 [Commands Explained](https://www.softcover.io/read/fc6c09de/unix_commands/basics#uid31)
 
+[CLI interactive](https://flashcards.github.io/command_line/introduction.html)
+
 `$whoami` -> codespace  
 `cd ~` -> change dir to Home  
 `touch file.ext` -> create a file  

@@ -1,0 +1,108 @@
+# HTML Fundamentals
+
+[HTML/CSS/JS Difs](https://brytdesigns.com/html-css-javascript-whats-the-difference)  
+[MDN element references](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)  
+[DEVDOCS REF](https://devdocs.io/)
+
+## HTML
+*`HTML` (`HyperText Markup Language`) defines the structure and content of webpages. We use HTML elements to create all of the paragraphs, headings, lists, images, and links that make up a typical webpage. In this lesson, we will explore how HTML elements work.*
+
+### Main differences
+![diffences](https://brytdesigns.com/_next/image?url=https%3A%2F%2Fadmin.brytdesigns.com%2Fwp-content%2Fuploads%2F2019%2F12%2Fhtml_css_javascript_infographic-1024x614.png&w=1080&q=75)
+
+
+### Elements and tags
+![wrap elements](ss/image.png)
+
+**You can think of elements as containers for content.**  
+*Almost all elements on an HTML page are just pieces of content wrapped in opening and closing HTML tags.*
+
+```html
+<p> Content here </p>
+```
+
+## HTML Boilerplate
+
+*All `HTML` documents have the same basic structure or boilerplate that needs to be in place before anything useful can be done. In this lesson, we will explore the different parts of this boilerplate and see how it all fits together.*
+
+### Creating an HTML file
+
+```bash
+mkdir html-boilerplate
+touch index.html
+```
+
+*We should always name the `HTML` file that will contain the homepage of our websites index.html. This is because web servers will by default look for an `index.html` page when users land on our websites - and not having one will cause big problems.*
+
+### The DOCTYPE
+
+*Every HTML page starts with a doctype declaration. The doctype’s purpose is to tell the browser what version of HTML it should use to render the document. The latest version of HTML is HTML5, and the doctype for that version is simply `<!DOCTYPE html>`*
+
+```html
+<!DOCTYPE html>
+```
+
+### HTML element
+*After we declare the doctype, we need to provide an `<html`> element. This is what’s known as the root element of the document, meaning that every other element in the document will be a descendant of it.*
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+```
+
+#### What is the lang attribute?
+
+*`lang` specifies the language of the text content in that element. This attribute is primarily used for improving accessibility of the webpage.*
+
+### Head element
+*The `<head>` element is where we put important `meta-information` about our webpages, and stuff required for our webpages to render correctly in the browser.*
+
+#### The charset meta element
+```html
+<meta charset="utf-8">
+```
+*We should always have the meta tag for the charset encoding of the webpage in the head element: `<meta charset="utf-8">`*
+
+*Setting the encoding is very important because it ensures that the webpage will display special symbols and characters from different languages correctly in the browser.*
+
+#### Title element
+
+```html
+<title> My learning page</title>
+```
+
+*The title element is used to give webpages a human-readable title which is displayed in our webpage’s browser tab.*
+
+### Body element
+
+*The final element needed to complete the HTML boilerplate is the `<body>` element. This is where all the content that will be displayed to users will go - the text, images, lists, links, and so on*
+
+### Complete the boilerplate
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+  </head>
+
+  <body>
+  </body>
+</html>
+```
+
+### Open in Browser the document
+
+```bash
+google-chrome index.html
+```
+
+
+
+
+
+
+
