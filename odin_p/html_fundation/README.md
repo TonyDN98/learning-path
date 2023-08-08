@@ -100,7 +100,74 @@ touch index.html
 google-chrome index.html
 ```
 
+## Working with Text
 
+*Most content on the web is `text-based`, so you will find yourself needing to work with HTML text elements quite a bit.*
+
+### Paragraphs
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </body>
+ </html>
+```
+
+*When the browser encounters new lines like this in your HTML, it will compress them down into one single space.*
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua.</p>
+
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat.</p>
+  </body>   
+ </html>
+```
+
+### Headings
+
+*Headings are different from other HTML text elements: they are displayed larger and bolder than other text to signify that they are headings.*
+
+*There are 6 different levels of headings starting from `<h1>` to `<h6>`. The number within a heading tag represents that heading’s level. The largest and most important heading is h1, while h6 is the tiniest heading at the lowest level*
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>This is a heading 1</h1>
+    <h2>This is a heading 2</h2>
+    <h3>This is a heading 3</h3>
+    <h4>This is a heading 4</h4>
+    <h5>This is a heading 5</h5>
+    <h6>This is a heading 6</h6>
+  </body>
+ </html>
+```
+
+*Using the ``correct`` level of heading is important as levels provide a hierarchy to the content. An h1 heading should always be used for the heading of the overall page, and the lower level headings should be used as the headings for content in smaller sections of the page.*
+
+### Strong & Em elements
+
+```html
+<!-- SEMANTIC TAGS -->
+<strong>STRONG</strong>
+<em>empatize</em>
+<b>bold text</b>
+<i>italic text</i>
+```
+
+## Lists
 
 
 
