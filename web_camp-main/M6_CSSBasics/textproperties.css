@@ -1,0 +1,57 @@
+/*
+CSS Text Properties
+
+text-align >- text aligning
+
+font-weight >- 100,200,300, normal(400),bold(700)
+
+text-decoration >- decorative lines on text;
+
+line-height >- set distance between lines of text
+
+letter-spacing >- set space between the letters;
+
+
+ABSOLUTE UNITS
+font-size >- the font size
+font-size: 15px;
+*/
+
+/*
+ABSOLUTE UNITS
+PX >- By far the most commonly used absolute unit
+1px != with the width of exactly 1pixel
+NOT RECOMMENDED FOR RESPONSIVE WEBSITES;
+*/
+
+
+/*
+FONT-FAMILY: Verdana,monospace; Every font-family has to have at least 1 backup font if the first one it's not found on the machine;
+*/
+h1 {
+    text-align: center;
+    color: red;
+    font-weight: normal;
+    /*text-decoration: overline;*/
+    /*text-decoration: blue underline;*/
+    text-decoration: #ff3311 underline wavy;
+    letter-spacing: 15px;
+    /*font-size: 15px;*/
+    /*font-size: 100px;*/
+
+    /*backup fonts if the first choices in order its not available on the machine*/
+    /*font-family: Verdana,sans-serif;*/
+    font-family: fantasy;
+}
+
+p {
+    text-align: center;
+    font-weight: normal;
+    line-height: 2; /* 2 x font size*/
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+

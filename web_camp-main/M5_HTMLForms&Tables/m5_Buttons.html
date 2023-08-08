@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M5_Buttons</title>
+</head>
+<body>
+<!--
+This button outside the form it's not going to do anything!
+
+-->
+
+
+<button type="button">OUTSIDE FORM BUTTON!</button>
+<hr>
+
+
+<form action="/tacos">
+    <button type="button">Please Do Not Submit the Form</button>
+
+<div>
+    <label for="username">Enter a UserName:</label>
+    <input type="text" placeholder="Username" id="username" name="username">
+</div>
+
+<div>
+    <label for="password">Enter Password:</label>
+    <input type="password" placeholder="******" id="password" name="pass">
+</div>
+
+
+<div>
+    <label for="color">Pick a color:</label>
+    <input type="color" id = "color" name="color">
+</div>
+    <button type="button">In the middile!</button>
+
+
+<div>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" name="number">
+</div>
+
+
+<div>
+    <label for="date">Pick  a date:</label>
+    <input type="date" id="date">
+</div>
+
+
+<button type="submit">Submit the form</button>
+<input type="submit"> <!--just dont use it-->
+<!--
+The default behavior of a button on a form it's  to submit the data!
+-->
+<div>
+<!--
+Clear the form!
+-->
+    <button type="reset">Reset</button>
+</div>
+</form>
+
+<!--
+Name Attribute:
+Will be used when we send data  to a server;
+Name all your inputs;
+<input name = "something">
+This attribute at the moment we submit de form will pass this values, and the servers will look for them!
+This  the output of our submit:
+http://localhost:63342/tacos?username=TOny&pass=1234&color=%23000000&number=22
+-->
+
+</body>
+</html>

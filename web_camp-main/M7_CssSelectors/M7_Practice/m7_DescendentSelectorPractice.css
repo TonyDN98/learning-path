@@ -1,0 +1,19 @@
+/*
+Give links in the header
+    font-size 30px; v
+    color teal;
+
+Give links in the <p> with id dislike
+    bolded
+    color red;
+*/
+
+header a{
+    font-size: 30px;
+    color: teal;
+}
+
+#dislikes a{
+    font-weight: bold;
+    color: red;
+}

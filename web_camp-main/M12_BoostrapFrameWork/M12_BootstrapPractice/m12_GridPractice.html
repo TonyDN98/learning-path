@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>M12. Grid System Practice</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 bg-danger">One Third</div>
+        <div class="col-8 bg-success">Two Thirds</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 bg-warning">One Quarter</div>
+        <div class="col-6 bg-primary">One Half</div>
+        <div class="col-3 bg-warning">One Quarter</div>
+    </div>
+</div>
+
+<h2 class="display-4">Responsive Grid</h2>
+<div class="row">
+    <div class="col-md-6 col-xl-4 bg-primary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolore error facilis fugit impedit itaque modi molestiae natus necessitatibus officiis pariatur, perspiciatis quaerat quia reiciendis soluta totam unde vel.
+    </div>
+
+    <div class="col-md-6 col-xl-4 bg-secondary" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolore error facilis fugit impedit itaque modi molestiae natus necessitatibus officiis pariatur, perspiciatis quaerat quia reiciendis soluta totam unde vel.
+    </div>
+
+    <div class="col-md-6 col-xl-4 bg-success" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolore error facilis fugit impedit itaque modi molestiae natus necessitatibus officiis pariatur, perspiciatis quaerat quia reiciendis soluta totam unde vel.
+    </div>
+
+    <div class="col-md-6 col-xl-3 bg-warning" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolore error facilis fugit impedit itaque modi molestiae natus necessitatibus officiis pariatur, perspiciatis quaerat quia reiciendis soluta totam unde vel.
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-xl-4 col-md-6">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1512658740823-0ebb97b3b86e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="img1">
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1480044965905-02098d419e96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="img 2">
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1555511920-5d0d9834f549?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" alt="img3">
+        </div>
+
+
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col bg-primary align-self-start">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eos laudantium ratione. Ad adipisci aliquam dolorem, illum minima molestias, nam optio qui quod reprehenderit rerum sequi similique veritatis voluptatem voluptatum.
+                </div>
+                <div class="col bg-secondary align-self-end">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cumque delectus deserunt enim hic in labore minus nisi praesentium, quam quibusdam quos rerum tempore temporibus tenetur ullam veniam voluptas.
+                </div>
+                <div class="col bg-warning align-self-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum ipsa molestias mollitia nihil obcaecati odit, quas reiciendis rem repellendus sapiente sequi temporibus tenetur. Delectus eos error itaque similique sit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur consequuntur cumque esse ex, exercitationem explicabo fugiat incidunt inventore ipsum itaque odio perspiciatis praesentium quod recusandae! Dicta esse officia repellat.
+                </div>
+                <div class="col bg-info align-self-start">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet atque aut exercitationem facilis fugiat ipsam labore, laudantium modi natus nemo nesciunt nisi obcaecati optio quae quam sint vero voluptate?
+                </div>
+            </div>
+        </div>
+
+        <h3 class="display-4">Justify Content</h3>
+        <div class="row justify-content-center">
+            <div class="col-4 bg-primary border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti dicta, dolor dolore eum ex laborum necessitatibus similique velit voluptates. Autem deleniti impedit iure labore odio, officia qui sed sequi.
+            </div>
+            <div class="col-4 bg-secondary border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti dicta, dolor dolore eum ex laborum necessitatibus similique velit voluptates. Autem deleniti impedit iure labore odio, officia qui sed sequi.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <h2 class="display-2">Bootstrap Forms;</h2>
+    <form action="#nowhere">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="EMAIL:">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Email:</label>
+            <input type="password" class="form-control" id="password" placeholder="************">
+        </div>
+
+        <div class="form-group">
+            <label for="state">State</label>
+            <select class="form-control" name="state" id="state">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymou

@@ -1,0 +1,17 @@
+{
+  "name": "m34_ejs",
+  "version": "1.0.0",
+  "description": "<h1>Module 34. EJS</h1>\r <p>|__________________________________________|</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}

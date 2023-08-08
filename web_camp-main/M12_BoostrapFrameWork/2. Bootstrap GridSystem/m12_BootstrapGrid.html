@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--
+    |------------------------------------------------------------------------------------------|
+    | Including Bootsrap CSS via Remoted Host File;
+    | CSS	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    | JS    https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
+    |------------------------------------------------------------------------------------------|
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>M12. Bootstrap Grid System</title>
+</head>
+<body>
+<!--
+Grid System works only with containers; So we have to have at least 1 container on the page;
+In this we can put other components that we want to, images, tables, cards and others;
+-->
+
+<div class="container">
+    <h1 class="display-1 text-center text-primary">The Grid System</h1>
+    <div class="row">
+        <!-- 6/6 12-->
+        <div class="col-6 bg-success">I'm 6 UNITS;</div>
+        <div class="col-6 bg-danger">I'm 6 UNITS;</div>
+    </div>
+
+    <br>
+    <div class="row">
+        <!-- 4/8 12-->
+        <div class="col-4 bg-success">I'm 4 UNITS;</div>
+        <div class="col-8 bg-danger">I'm 8 UNITS;</div>
+    </div>
+
+    <br>
+    <div class="row">
+        <!-- 2/10 12-->
+        <div class="col-2 bg-success">I'm 2 UNITS;</div>
+        <div class="col-10 bg-danger">I'm 10 UNITS;</div>
+    </div>
+
+    <br>
+    <div class="row">
+        <!-- 12 12-->
+        <div class="col-12 bg-success">I'm 12 UNITS;</div>
+    </div>
+
+    <br>
+    <div class="row">
+        <!-- 2/8/2 12-->
+        <div class="col-2 bg-success">I'm 2 UNITS;</div>
+        <div class="col-8 bg-danger">I'm 8 UNITS;</div>
+        <div class="col-2 bg-secondary">I'm 2 UNITS;</div>
+    </div>
+
+<!--Equally Spaced Cols-->
+    <br>
+    <div class="row">
+        <div class="col bg-primary">Col 1</div>
+        <div class="col bg-secondary">Col 2</div>
+        <div class="col bg-success">Col 3</div>
+        <div class="col bg-danger">Col 4</div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
