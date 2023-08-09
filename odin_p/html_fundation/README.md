@@ -168,8 +168,72 @@ google-chrome index.html
 ```
 
 ## Lists
+### Unordered lists
+
+*Unordered lists are created using the `<ul> `element, and each item within the list is created using the list item element `<li>`.*
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
 
 
+### Ordered lists
+
+*Ordered lists are created using the `<ol>` element. Each individual item in them is again created using the list item element `<li>`.*
+
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+#### Assignment
+
+*To get some practice using lists, create a new HTML document and create the following lists:*
+
+* An unordered shopping list of your favorite foods  
+* An ordered list of todo’s you need to get done today  
+* An unordered list of places you’d like to visit someday  
+* An ordered list of your all time top 5 favorite video games or movies
+
+```html
+<ul>
+  <li>Orez cu pui</li>
+  <li>Orzo cu pui</li>
+  <li>Tocanita</li>
+  <li>Ciorba de pui ala grec</li>
+  <li>Mazare cu pui</li>
+</ul>
+```
+
+```html
+<ol>
+  <li>Work</li>
+  <li>Gift</li>
+  <li>Notihng</li>
+</ol>
+```
+
+```html
+<ul>
+  <li>Egipt</li>
+  <li>Bali</li>
+</ul>
+```
+
+```html
+<ol>
+  <li>COD</li>
+  <li>LOL</li>
+  <li>Warframe</li>
+</ol>
+```
 
 
 
