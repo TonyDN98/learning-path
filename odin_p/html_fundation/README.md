@@ -234,6 +234,116 @@ google-chrome index.html
   <li>Warframe</li>
 </ol>
 ```
+### [Links and Images](https://www.theodinproject.com/lessons/foundations-links-and-images)
+
+### Anchor elements
+
+*To create a link in `HTML`, we use the anchor element. An anchor element is defined by wrapping the text or another HTML element we want to be a link with an `<a>` tag.*
+
+```html
+<a href="https://www.theodinproject.com/about">click me</a>
+```
+
+*While `href` specifies the `destination` link, `target` specifies where the linked resource will be opened. If it is not present, then, by default, it will take on the `_self` value which opens the link in the current tab. To open the link in a new tab or window (depends on browser settings) you can set it to `_blank`*
+
+```html
+<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>
+```
+
+### Absolute and relative links
+
+#### Absolute links
+
+*A typical absolute link will be made up of the following parts: `protocol://domain/path`. An absolute link will always contain the protocol and domain of the destination.*
+
+```html
+https://www.theodinproject.com/about
+```
+
+#### Relative links
+
+*Links to other pages within our own website are called relative links. Relative links do not include the domain name, since it is another page on the same site, it assumes the domain name will be the same as the page we created the link on.*
+
+*Relative links only include the file path to the other page, relative to the page you are creating the link on. This is quite abstract, let’s see this in action using an example.*
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Odin Links and Images</title>
+  </head>
+
+  <body>
+    <h1>About Page</h1>
+  </body>
+</html>
+```
+
+```html
+<body>
+  <h1>Homepage</h1>
+	<a href="https://www.theodinproject.com/about">click me</a>
+
+	<a href="about.html">About</a>
+</body>
+```
+
+*This works because the index and about page are in the same directory. That means we can simply use its name (`about.html`) as the link’s href value.*
+
+```html
+<body>
+  <h1>Homepage</h1>
+  <a href="./pages/about.html">About</a>
+</body>
+```
+
+* Prepending `./` before the link will in most cases prevent such issues. By adding `./` you are specifying to your code that it should start looking for the file/directory relative to the current directory.*
+
+### A metaphor !!!!
+
+Absolute and relative links are a tricky concept to build a good mental model of, a metaphor may help:
+
+Think of your `domain name (town.com)` as a town, the directory in which your website is located `(/museum) as a museum`, and each page on your website as a `room` in the museum `(/museum/movie_room.html and /museum/shops/coffee_shop.html)`. Relative links like ./shops/coffee_shop.html are directions from the current room (the museum movie room /museum/movie_room.html) to another room (the museum shop). Absolute links, on the other hand, are full directions including the protocol (https), domain name (town.com) and the path from that domain name (/museum/shops/coffee_shop.html): `https://town.com/museum/shops/coffee_shop.html.`
 
 
+## Images
 
+*To display an image in HTML we use the `<img>` element. Unlike the other elements we have encountered, the `<img>` element is self-closing. Empty, self-closing HTML elements do not need a closing tag.*
+
+```html
+ <img src="https://www.theodinproject.com/mstile-310x310.png">
+```
+
+#### Assignment
+*Create a new directory named images within the odin-links-and-images project.*
+
+*Next, download this image and move it into the images directory we just created.*
+
+*Rename the image to dog.jpg*
+
+```html
+<body>
+  <h1>Homepage</h1>
+	<a href="https://www.theodinproject.com/about">click me</a>
+
+	<a href="./pages/about.html">About</a>
+
+	<img src="./images/dog.jpg">
+</body>
+```
+
+### Parent directories
+
+*To go to the parent directory we need to use two dots in the relative filepath like this: `../ `*
+
+```html
+<img src="../images/dog.jpg">
+```
+
+### Alt attribute
+*The `alt` attribute is used to describe an image. It will be used in place of the image if it cannot be loaded. It is also used with screen readers to describe what the image is to visually impaired users.*
+
+```html
+ <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo"
+```
