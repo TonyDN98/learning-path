@@ -21,7 +21,7 @@
 <p> Content here </p>
 ```
 
-## HTML Boilerplate
+## [HTML Boilerplate](https://www.theodinproject.com/lessons/foundations-html-boilerplate)
 
 *All `HTML` documents have the same basic structure or boilerplate that needs to be in place before anything useful can be done. In this lesson, we will explore the different parts of this boilerplate and see how it all fits together.*
 
@@ -100,7 +100,7 @@ touch index.html
 google-chrome index.html
 ```
 
-## Working with Text
+## [Working with Text](https://www.theodinproject.com/lessons/foundations-working-with-text)
 
 *Most content on the web is `text-based`, so you will find yourself needing to work with HTML text elements quite a bit.*
 
@@ -167,7 +167,7 @@ google-chrome index.html
 <i>italic text</i>
 ```
 
-## Lists
+## [Lists](https://www.theodinproject.com/lessons/foundations-lists)
 ### Unordered lists
 
 *Unordered lists are created using the `<ul> `element, and each item within the list is created using the list item element `<li>`.*
@@ -361,10 +361,41 @@ Think of your `domain name (town.com)` as a town, the directory in which your we
 *``GIFs`` are the go-to option for simple animations, but the trade off is that they’re somewhat limited in terms of color palette—never use them for photos. Transparent pixels are a binary option for GIFs, meaning you can’t have semi-opaque pixels. This can make it difficult to get high levels of detail on a transparent background. For this reason, it’s usually`` better to use PNG images if you don’t need animation``.*
 
 ### png images
-*``PNGs`` are great for anything that’s not a photo or animated. For photos, a PNG file of the same quality (as perceived the human eye) would generally be bigger than an equivalent JPG file. However, they do deal with opacity just fine, and they don’t have color palette limitations. This makes them an excellent fit for ``icons, technical diagrams, logos``, etc.*
+*``PNGs`` are great for anything that’s not a photo or animated. For photos, a PNG file of the same quality (as perceived the human eye) would generally be bigger than an equivalent JPG file. However, they do deal with opacity just fine, and    they don’t have color palette limitations. This makes them an excellent fit for ``icons, technical diagrams, logos``, etc.*
 
 ### svg images
 *Unlike the pixel-based image formats above, ``SVG`` is a ``vector-based graphics`` format, meaning it can scale up or down to any dimension without loss of quality. This property makes SVG images a wonderful tool for responsive design. They’re good for pretty much all the same use cases as PNGs, and you should use them whenever you can.*
+
+## [Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages)
+
+### Subject
+*A `brief` summary of the change you made to the project. Note: GitHub has a 72-character limit so we recommend keeping your commits’ subject to within this amount.*
+
+```html
+This is the change I made to the codebase.
+```
+
+### Body
+
+*A concise yet clear description of what you did. Describe the problem your commit solves and how.*
+
+```html
+Add missing link and alt text to the company's logo
+
+Screen readers won't read the images to users with disabilities without this information.
+```
+
+*Provides a subject that specifies your code’s action (e.g., “Add missing link and alt text to the company’s logo”)
+Contains a body that provides a concise yet clear description of why the commit needed to be made (e.g., “Screen readers won’t read the images to users with disabilities without this information”)
+Separates the subject from the body with a new/blank line. This is a best practice we highly recommend following. It makes commit messages easier for other developers to read.*
+
+### When to commit
+
+A good way to view a commit is like a “snapshot” of your code at the moment that it was made. That version of your code up to that point will be saved for you to revert back to or look back at.
+
+When writing code, it’s considered best practice to commit every time you have a meaningful change in the code. This will create a timeline of your progress and show that your finished code didn’t appear out of nowhere.
+
+In other words, make a commit if you get a piece of code you are working on to function like you want it to, fix a typo, or fix a bug. As you gain experience, you will develop a better feel for what should be committed!
 
 
 
