@@ -1,14 +1,14 @@
 # HTML Fundamentals
 
-[HTML/CSS/JS Difs](https://brytdesigns.com/html-css-javascript-whats-the-difference)  
+[HTML/CSS/JS Diffs](https://brytdesigns.com/html-css-javascript-whats-the-difference)  
 [MDN element references](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)  
-[DEVDOCS REF](https://devdocs.io/)
+[devdocs REF](https://devdocs.io/)
 
 ## HTML
 *`HTML` (`HyperText Markup Language`) defines the structure and content of webpages. We use HTML elements to create all of the paragraphs, headings, lists, images, and links that make up a typical webpage. In this lesson, we will explore how HTML elements work.*
 
 ### Main differences
-![diffences](https://brytdesigns.com/_next/image?url=https%3A%2F%2Fadmin.brytdesigns.com%2Fwp-content%2Fuploads%2F2019%2F12%2Fhtml_css_javascript_infographic-1024x614.png&w=1080&q=75)
+![differences](https://brytdesigns.com/_next/image?url=https%3A%2F%2Fadmin.brytdesigns.com%2Fwp-content%2Fuploads%2F2019%2F12%2Fhtml_css_javascript_infographic-1024x614.png&w=1080&q=75)
 
 
 ### Elements and tags
@@ -111,7 +111,7 @@ google-chrome index.html
   <head>
   </head>
   <body>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit ames, conceptsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </body>
@@ -162,7 +162,7 @@ google-chrome index.html
 ```html
 <!-- SEMANTIC TAGS -->
 <strong>STRONG</strong>
-<em>empatize</em>
+<em>empathize</em>
 <b>bold text</b>
 <i>italic text</i>
 ```
@@ -207,7 +207,7 @@ google-chrome index.html
   <li>Orez cu pui</li>
   <li>Orzo cu pui</li>
   <li>Tocanita</li>
-  <li>Ciorba de pui ala grec</li>
+  <li>Ciorba de pui ala greek</li>
   <li>Mazare cu pui</li>
 </ul>
 ```
@@ -216,13 +216,13 @@ google-chrome index.html
 <ol>
   <li>Work</li>
   <li>Gift</li>
-  <li>Notihng</li>
+  <li>Nothing</li>
 </ol>
 ```
 
 ```html
 <ul>
-  <li>Egipt</li>
+  <li>Egypt</li>
   <li>Bali</li>
 </ul>
 ```
