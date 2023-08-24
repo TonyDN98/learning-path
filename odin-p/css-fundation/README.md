@@ -1,7 +1,7 @@
 # CSS Fundamentals
 
-[]()  
-[]()  
+[CSS values and units MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)  
+[video material](https://scrimba.com/scrim/co12d4cf99cf2776f19e84a9d)  
 []()
 
 ### Basic Syntax
