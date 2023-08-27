@@ -224,5 +224,100 @@ p {
 
 
 
+## The Cascade
+
+*Sometimes we may have rules that conflict with one another, and we end up with some unexpected results. “But I wanted these paragraphs to be blue, why are they red like these other paragraphs?!” As frustrating as this can be, it’s important to understand that CSS doesn’t just do things against our wishes. CSS only does what we tell it to do. One exception to this is the default styles that are provided by a browser. These default styles vary from browser to browser, and they are why some elements create a large “gap” between themselves and other elements, or why buttons look the way they do, despite us not writing any CSS rules to style them that way.*
+
+*So if you end up with some unexpected behavior like this it’s either because of these default styles, not understanding how a property works, or not understanding this little thing called the cascade.*
+
+*The cascade is what determines which rules actually get applied to our HTML. There are different factors that the cascade uses to determine this. We will examine three of these factors, which will hopefully help you avoid those frustrating “I hate CSS” moments.*
+
+
+### Specificity
+
+``ID selectors`` (most specific selector)  
+``Class selectors``  
+``Type selectors``  
+
+*``Specificity`` will only be taken into account when an element has multiple, conflicting declarations targeting it, sort of like a tie-breaker. An ID selector will always beat any number of class selectors, a class selector will always beat any number of type selectors, and a type selector will always beat any number of anything less specific than it. When no declaration has a selector with a higher ``specificity``, a larger amount of a single selector will beat a smaller amount of that same selector.*
+
+```html
+<!-- index.html -->
+
+<div class="main">
+  <div class="list subsection"></div>
+</div>
+```
+
+```css
+/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+```
+
+*In the example above, both rules are using only class selectors, but ``rule 2 is more specific`` because it is using more class selectors, so the color: red; declaration would take precedence.
+
+Now, let’s change things a little bit:*
+
+```html
+<!-- index.html -->
+
+<div class="main">
+  <div class="list" id="subsection"></div>
+</div>
+```
+
+```css
+/* rule 1 */
+#subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+```
+
+*Here because it's an ID, will take out the specify*
+
+### Inheritance
+
+*Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography based properties (``color``, ``font-size``, ``font-family``, etc.) are usually inherited, while most other properties aren’t.*
+
+```html
+<!-- index.html -->
+
+<div id="parent">
+  <div class="child"></div>
+</div
+```
+
+```css
+/* styles.css */
+
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+```
+
+*Despite the ``parent`` element having a higher specificity with an ID, the ``child`` element would have the ``color: blue`` style applied since that declaration directly targets it, while`` color: red`` from the parent is only inherited.*
+
+
+
+
+
+
+
+
 
 
