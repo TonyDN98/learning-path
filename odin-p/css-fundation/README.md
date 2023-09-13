@@ -226,6 +226,16 @@ p {
 
 ## The Cascade
 
+[The CSS Cascade is a great, interactive read that goes a little more in detail about other factors that affect what CSS rules actually end up being applied](https://2019.wattenberger.com/blog/css-cascade#importance)  
+
+[Changing the Font Family describes a few different approaches to using custom fonts.](https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css#finding-and-loading-a-font-file-from-a-hosted-service)
+
+[CSS Specificity Explained from Kevin Powell goes through various specificity examples and gives some advice on avoiding wrestling with specificity.](https://www.youtube.com/watch?v=c0kfcP_nD9E&ab_channel=KevinPowell)
+
+[MDN references](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index)
+
+
+
 *Sometimes we may have rules that conflict with one another, and we end up with some unexpected results. “But I wanted these paragraphs to be blue, why are they red like these other paragraphs?!” As frustrating as this can be, it’s important to understand that CSS doesn’t just do things against our wishes. CSS only does what we tell it to do. One exception to this is the default styles that are provided by a browser. These default styles vary from browser to browser, and they are why some elements create a large “gap” between themselves and other elements, or why buttons look the way they do, despite us not writing any CSS rules to style them that way.*
 
 *So if you end up with some unexpected behavior like this it’s either because of these default styles, not understanding how a property works, or not understanding this little thing called the cascade.*
@@ -313,8 +323,33 @@ Now, let’s change things a little bit:*
 *Despite the ``parent`` element having a higher specificity with an ID, the ``child`` element would have the ``color: blue`` style applied since that declaration directly targets it, while`` color: red`` from the parent is only inherited.*
 
 
+## [The BOX MODEL](https://www.theodinproject.com/lessons/foundations-the-box-model)
+### LINKS
+
+[8 MIN YOUTUBE VIDEO](https://www.youtube.com/watch?v=rIO5326FgPE)  
 
 
+[What is the difference between the standard and alternative box model?](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model)
+
+[CSS TRICKS](https://css-tricks.com/almanac/properties/m/margin/)
+
+*Every single thing on a webpage is a `rectangular box`. These boxes can have other boxes in them and can sit alongside one another. You can get a rough idea of how this works by sticking a border on every item on the page like this:*
+
+```css
+* {
+  border: 2px solid red;
+}
+```
+
+![everything is a box](https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/css-foundations/the-box-model/imgs/boxes.png)
+
+*The only real complication here is that there are many ways to manipulate the size of these boxes, and the space between them, using `padding`, `margin`, and `border`. The assigned articles go into more depth on this concept, but to sum it up briefly:*
+
+`padding` increases the space between the border of a box and the content of the box.  
+`margin` increases the space between the borders of a box and the borders of adjacent boxes.  
+`border` adds space (even if it’s only a pixel or two) between the margin and the padding.  
+
+![box model explained](https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/css-foundations/the-box-model/imgs/box-model.png)
 
 
 
