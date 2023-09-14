@@ -352,7 +352,60 @@ Now, let’s change things a little bit:*
 ![box model explained](https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/css-foundations/the-box-model/imgs/box-model.png)
 
 
+# [Block and Inline](https://www.theodinproject.com/lessons/foundations-block-and-inline)
 
+### Block elements
+*Most of the elements that you have learned about so far are block elements. In other words, their default style is display: block. By `default`, block elements will appear on the page stacked atop each other, each new element starting on a new line.*
 
+### Inline elements
 
+*`Inline` elements, however, do not start on a new line. They appear in line with whatever elements they are placed beside. A clear example of an inline element is a link, or `<a>` tag. If you stick one of these in the middle of a paragraph of text, it will behave like a part of the paragraph. *
 
+# [FLEXBOX](https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox)
+
+[FLEX TURORIAL](https://internetingishard.netlify.app/html-and-css/flexbox/index.html)
+
+**`Flexbox` is a way to arrange items into rows or columns.**
+
+```html
+<div class="flex-container">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+</div>
+```
+
+```css
+.flex-container {
+  display:flex;
+}
+
+.flex-container div {
+  background-color: purple;
+  border: 4px solid red;
+  width: 1.5em;
+  flex: 1;
+}
+```
+
+*All 3 divs should now be arranged horizontally. If you resize the results frame with the “1x”, “.5x” and “.25x” buttons you’ll also see that the divs will ‘flex’. They will fill the available area and will each have equal width.*
+
+### See the live example here
+![flex-display](./ss/flex-display.png)
+
+## Flex containers and flex items
+
+*As you’ve seen, `flexbox` is not just a single CSS property but a whole toolbox of properties that you can use to put things where you need them. Some of these properties belong on the `flex container`, while some go on the `flex items`. This is a simple yet important concept.*
+
+**A `flex container` is any element that has `display: flex` on it. A `flex item` is any element that lives directly inside of a `flex container`.**
+
+![flex-container](https://cdn.statically.io/gh/TheOdinProject/curriculum/495704c6eb6bf33bc927534f231533a82b27b2ac/html_css/v2/foundations/flexbox/imgs/03.png)
+
+**Somewhat confusingly, any element can be both a flex container and a flex item. Said another way, you can also put `display: flex` on a flex item and then use flexbox to arrange its children.**
+
+![flex of flex](https://cdn.statically.io/gh/TheOdinProject/curriculum/495704c6eb6bf33bc927534f231533a82b27b2ac/html_css/v2/foundations/flexbox/imgs/04.png)
+
+*Creating and nesting multiple flex containers and items is the primary way we will be building up complex layouts.*
+
+![flex-complex](https://cdn.statically.io/gh/TheOdinProject/curriculum/495704c6eb6bf33bc927534f231533a82b27b2ac/html_css/v2/foundations/flexbox/imgs/05.png)
