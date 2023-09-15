@@ -1,0 +1,19 @@
+.box{
+    border: 5px solid purple;
+    background-color: lightgray;
+    width: 300px;
+    height: 150px;
+    padding: 40px;
+    margin: 40px;
+}
+
+.alternative{
+    box-sizing: border-box;
+}
+
+.margin{
+    margin-top: -40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+}
