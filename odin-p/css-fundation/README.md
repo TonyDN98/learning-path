@@ -558,3 +558,5 @@ Now, let’s change things a little bit:*
     width: 300px;
 }
 ```
+
+![flex-exercise](./ss/flex-exercise.png)
