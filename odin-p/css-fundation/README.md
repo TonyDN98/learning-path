@@ -409,3 +409,152 @@ Now, let’s change things a little bit:*
 *Creating and nesting multiple flex containers and items is the primary way we will be building up complex layouts.*
 
 ![flex-complex](https://cdn.statically.io/gh/TheOdinProject/curriculum/495704c6eb6bf33bc927534f231533a82b27b2ac/html_css/v2/foundations/flexbox/imgs/05.png)
+
+## EXERCISES
+```HTML
+<!-- Menu container -->
+    <div class="menu-container">
+        <div class="menu">
+            <div class="date">Sep 18, 2023</div>
+                <div class="links">
+                    <div class="signup">Sign Up</div>
+                    <div class="login">Login</div>
+                </div>
+        </div>
+    </div>
+
+<!--HEADER-->
+    <div class="header-container">
+        <div class="header">
+            <div class="subscribe">Subscribe &#9662;</div>
+            <div class="logo">
+                <img src="./images/awesome-logo.svg" alt="logo">
+            </div>
+            <div class="social">
+                <img src="./images/social-icons.svg" alt="social icon">
+            </div>
+        </div>
+    </div>
+
+<!--PHOTOS-->
+        <div class="photo-grid-container">
+            <div class="photo-grid">
+                <div class="photo-grid-item first-item">
+                    <img src="./images/one.svg" alt="1">
+                </div>
+                <div class="photo-grid-item">
+                    <img src="./images/two.svg" alt="2">
+                </div>
+                <div class="photo-grid-item">
+                    <img src="./images/three.svg" alt="3">
+                </div>
+                <div class="photo-grid-item">
+                    <img src="./images/four.svg" alt="4">
+                </div><div class="photo-grid-item">
+                    <img src="./images/five.svg" alt="5">
+                </div>
+            </div>
+        </div>
+
+<!--FOOTER-->
+        <div class="footer">
+            <div class="footer-item footer-one"></div>
+            <div class="footer-item footer-two"></div>
+            <div class="footer-item footer-three"></div>
+        </div>
+```
+
+```css
+
+/*borderbox*/
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/*MENU*/
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex; /* flex container */
+    justify-content: center;
+}
+
+.menu{
+    border: 1px solid #fff;  /* for debug */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    /* border: 1px solid #fff;  */
+    justify-content: flex-end;
+
+}
+
+/* HEADER */
+
+.header-container {
+    color:#5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between; /* <- ->*/
+    align-items: center; /* ^  v */
+}
+
+/* PHOTO */
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    width: 900px;
+    display: flex;
+    justify-content: center; /* <- -> */
+    flex-wrap: wrap; /*Display Wrap*/
+    align-items: center; /* ^ v */
+    flex-direction: row-reverse;
+}
+
+.photo-grid-item{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    border:1px solid #fff;
+    background-color: #D6E9FE;
+    height: 100px;
+    flex: 1;
+}
+
+.footer-two{
+    flex:2;
+}
+
+.footer-one,
+.footer-three{
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+}
+```
