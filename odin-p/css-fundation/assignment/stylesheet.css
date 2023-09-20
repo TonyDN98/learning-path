@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: monospace;
+
+}
+
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    margin-bottom: 32px;
+  }
+
+.left-side{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+
+}
+
+.right-side{
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    
+}
+
+.right-side>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo{
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+.right-side>ul>li>a{
+  font-size: 18px;
+  color:#E5E7EB;
+}
+
+.header-website{
+  display: flex;
+
+}
+
+.awesome-text{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #1F2937;
+  color:#F9FAF8
+}
+
+.awesome-text>h2{
+  font-size: 48px;
+}
+
+.awesome-text>button{
+  background-color: #3882F6;
+
+}
+
+.awesome-image{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+}
+
+
+
+
+
+  ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+  }
+  
+  a {
+    /* this removes the line under the links */
+    text-decoration: none;
+  }
