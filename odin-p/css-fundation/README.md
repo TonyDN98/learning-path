@@ -144,7 +144,7 @@ div {
 ### Color and background-color
 *The ``color`` property sets an element’s text color, while ``background-color`` sets, well, the background color of an element. I guess we’re done here?
 
-Almost. Both of these properties can accept one of several kinds of values. A common one is a keyword, such as an actual color name like red or the transparent keyword. They also accept ``HEX``, ``RGB``, and ``HSL`` values, which you may be familiar with if you’ve ever used a photoshop program or a site where you could customize your profile colors.*
+Almost. Both of these properties can accept one of several kinds of values. A common one is a keyword, such as an actual color name like red or the transparent keyword. They also accept ``HEX``, ``RGB``, and ``HSL`` values, which you may be familiar with if you’ve ever used a PHOTOshop program or a site where you could customize your profile colors.*
 
 ```css
 p {
