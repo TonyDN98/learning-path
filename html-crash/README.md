@@ -1,0 +1,51 @@
+# HTML CRASH COURSE
+
+## Tag syntax
+![tag-syntax](ss/tag-syntax.png)
+
+## Page structure
+![page-structure](ss/page-structure.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+</head>
+<body>
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse quod culpa quam dolore <em>possimus, odio consequatur harum provident veniam! Eum distinctio assumenda eius. Illum dolore</em> excepturi deserunt quas obcaecati.
+    </p>
+
+    <p>
+        Lorem ipsum ,<strong>dolor sit amet consectetur</strong>, adipisicing elit. Commodi consequuntur praesentium, corrupti dicta, debitis delectus aliquam magnam modi nobis ipsum impedit, ut vitae. Quo dolor placeat tenetur quae veritatis amet.
+    </p>
+</body>
+</html>
+```
+
+`User Agent StyleSheet` is the default browser style.
+
+## Inline vs Block-level Elements
+
+![inline-block-elements](ss/inlineblock.png)
+
+`<em> ` semantic tag for bold
+`<strong>` semantic tag for empathized
+
+<a href="somewhere" target="_blank">
+
+## Tag Attributes
+
+![Alt text](tag.png)
