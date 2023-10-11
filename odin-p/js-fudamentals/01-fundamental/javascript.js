@@ -22,5 +22,14 @@ let actual = MAX -17
 let percentage = actual / MAX
 console.log("Percentage= ", percentage);
 
-// == equal and === not equal
+// == equal and === scrict equal
+let n1 = 10;
+let n2 = '10';
+
+// == EQUAL
+console.log("Value of n1 == n2", n1==n2); // true
+
+// Strict EQUAL
+console.log("Value of n1 === n2", n1===n2); // false
+
 
