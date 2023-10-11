@@ -1,4 +1,5 @@
 console.log("from js file");
+alert('from JS');
 
 // Variable declaration with let and const for NOW.
 
