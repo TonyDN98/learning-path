@@ -100,7 +100,10 @@
 
 
 
-1-15 : HTML & CSS proficiency16-30 : Javascript proficiency31-34: PHP proficiency34-39: Wordpress proficiency40: reinforce what you've learned
+1-15 : HTML & CSS proficiency  
+16-30 : Javascript proficiency  
+31-34: PHP proficiency  
+34-39: Wordpress proficiency40: reinforce what you've learned
   ---
 ## Resources for Stack
 
