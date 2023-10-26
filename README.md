@@ -18,7 +18,7 @@
 ### Watch his videos in this order:
 
 
-* HTML Crash Course [(YouTube)](https://www.youtube.com/watch?v=UB1O30fR-EE)
+* HTML Crash Course [(YouTube)](https://www.youtube.com/watch?v=UB1O30fR-EE) DONE 
 
 * CSS Crash Course [(Youtube)](https://www.youtube.com/watch?v=yfoY53QXEnI)
 
@@ -29,7 +29,7 @@
 * Creative Agency Website from Scratch [(Youtube)](https://www.youtube.com/watch?v=lvYnfMOUOJY)
 
 * Full Screen Video Background - HTML & CSS [(Youtube)](https://www.youtube.com/watch?v=Gx_7GQtSdpc)
-
+ 
 * HTML CSS Mobile UI Layout - CVS clone [(Youtube)](https://www.youtube.com/watch?v=1_ljUv6cvVE)
 
 * Flexbox Crash Course 2022 [(Youtube)](https://www.youtube.com/watch?v=3YW65K6LcIA)
@@ -49,7 +49,7 @@
 * Tailwind CSS from Scratch (UDEMY $$)
 
 * Javascript Crash Course for Beginners [(Youtube)]()
-* 
+
 * JSON Crash Course [(Youtube)]()
 
 * Javascript OOP crash Course [(Youtube)]()
