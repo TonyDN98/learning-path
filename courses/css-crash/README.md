@@ -123,3 +123,28 @@ a:visited{
 ![positionin in css](ss/position-css.png)
 
 
+## Pseudo-Elements in CSS
+
+```html
+
+```
+
+```css
+my-list li:first-child{
+    color:red;
+}
+
+my-list li:last-child{
+    color: blue;
+}
+
+my-list li:nth-child(5){
+    /* al 5-lea element */
+    color:greenlight;
+}
+
+my-list li:nth-child(even){
+    color:grey;
+}
+
+```

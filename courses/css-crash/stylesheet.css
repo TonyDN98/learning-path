@@ -95,3 +95,19 @@ a:visited{
     /* list image url */
     list-style-image: none;
 }
+
+.my-list li:first-child{
+    color: red;
+}
+
+.my-list li:last-child{
+    color: blue;
+}
+
+.my-list li:nth-child(3){
+    color: greenyellow;
+}
+
+.my-list li:nth-child(even){
+    background-color: green;
+}
