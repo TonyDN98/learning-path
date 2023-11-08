@@ -20,7 +20,7 @@
 
 * HTML Crash Course [(YouTube)](https://www.youtube.com/watch?v=UB1O30fR-EE) DONE 
 
-* CSS Crash Course [(Youtube)](https://www.youtube.com/watch?v=yfoY53QXEnI)
+* CSS Crash Course [(Youtube)](https://www.youtube.com/watch?v=yfoY53QXEnI) DONE
 
 * CSS3 Animations and Transitions Crash Course [(Youtube)](https://www.youtube.com/watch?v=zHUpx90NerM)
 
