@@ -22,11 +22,11 @@
 
 * CSS Crash Course [(Youtube)](https://www.youtube.com/watch?v=yfoY53QXEnI) DONE
 
-* CSS3 Animations and Transitions Crash Course [(Youtube)](https://www.youtube.com/watch?v=zHUpx90NerM)
+* CSS3 Animations and Transitions Crash Course [(Youtube)](https://www.youtube.com/watch?v=zHUpx90NerM) DONE
 
-* Create a Website with Video Background [(Youtube)](https://www.youtube.com/watch?v=8MgpE2DTTKA)
+* Create a Website with Video Background [(Youtube)](https://www.youtube.com/watch?v=8MgpE2DTTKA) DONE
 
-* Creative Agency Website from Scratch [(Youtube)](https://www.youtube.com/watch?v=lvYnfMOUOJY)
+* Creative Agency Website from Scratch [(Youtube)](https://www.youtube.com/watch?v=lvYnfMOUOJY) 
 
 * Full Screen Video Background - HTML & CSS [(Youtube)](https://www.youtube.com/watch?v=Gx_7GQtSdpc)
  
