@@ -1,0 +1,153 @@
+VIM Course Notes
++----------------------------------------------------------------------------------------------------------------------------------------+
+|	Vi Imporved >- VIM
+|	Vi - First FullScreen Editor written in Unix
+|		>- Support For Programming Languages and fleFormat.
+|	VI >- We can think about it as NotePad and VIM >- As Notepad++
++----------------------------------------------------------------------------------------------------------------------------------------+
+|	:h vim-modes
+		>- Normal, Insert, Visual, Command-line
+		>- Normal Default Mode:
+|		 	>>- Acces normal mode from different modes by press ' ESC '
+|			>>- Read the FILE.
+|		
+		>- Insert Mode:
+|			>>- Press ' i ' to enter INSERT MODE
+|			>>- Exit to Normal Mode with ESC
+|			>>- -- INSERT -- on the cornet indicate that we are in INSERT MODE.
+|
+|		>- Visual Mode(Think about it clicking, and dragging with a mouse to highlight text and perform copy/cut)
+|
+|			>>- Press ' v ' to enter VISUAL MODE -- VISUAL --
+|			>>- Exit to Normal Mode with ESC
+|			>>- -- VISUAL --
+|
+|		>- Command-Line Mode:
+|			>>- Press ' : ' from Normal Mode
+|			>>- : Followd by text
+|			>>- Modify settings, save, quit, replace, help
+|			>>- : indicate that we are in Command-Line Mode.
++----------------------------------------------------------------------------------------------------------------------------------------+
+| :q >- Will quit.
+| :q!>- Will quit without saving.
+| vim <filename>  >- To open a file with vim from CLI.
+|
+|
++----------------------------------------------------------------------------------------------------------------------------------------+
+|	SAVE and CLOSE a file
+|	---------------------
+|	>-Save a file:
+|	--------------
+|		>>- :w
+|		>>- :w filename(SaveAs from Windows) Makes a copy of the file.
+|
+|	>- Close a File:
+|	----------------
+|		>>- :q  (Quit)
+|		>>- :wq (Save and quit)
+|		>>- :q! (Quit without save)
+|		>> ZZ   (Save if changed and quit)
++----------------------------------------------------------------------------------------------------------------------------------------+
+|	MOVING AROUND
+|	-------------
+|		>- Except the Arrows u can move with HJKL but u don't want it dont u?
+|		>- To move the cursor at the end of the <p> SHIFT 4.
+|		>- To move the cursor at the start of the <p> 0.
++----------------------------------------------------------------------------------------------------------------------------------------+
+|		IMPORTANT 
+|	>-' gg ' 	 >- UPPER of the file  
+|   >- ' G '  	 >-BOTTOM OF FILE.
+|	>- ' ctr + d ' >- Half page down.
+|	>- ' ctr + u ' >-Half page up.
++----------------------------------------------------------------------------------------------------------------------------------------+
+|
+|	LINE NUMBERS
+|	------------
+|
+|	>- Very usefull for dugging and errors.
+|	>- Command-Line Mode To Enable
+|		---------------------------
+|		:set number  >- Enable Line number
+|		:set nonumber >- Disable Line Number
+|	
+|	>- Go to Line
+|	--------------
+|	: <linenumber>
++----------------------------------------------------------------------------------------------------------------------------------------+
+|	EDITING IN VIM
+|	---------------
+|
+|	INSERT Mode
+|	------------
+|		>>- Enter INSERT MODE BEFORE coursor ' i '
+|		>>- Enter INSERT MODE AFTER coursor ' a '
+|		>>- Enter INSERT MODE BEGINNING of LINE ' I '
+|		>>- Enter INSERT MODE AT THE END OF LINE ' A '
+|
+|	BASIC EDIT
+|	-----------
+|		>>- Insert new line bellow ' o '
+|		>>- Insert new line above ' O '
+|		>>- Delete Character ' x '
+|		>>- Delete Line 'dd'
+|
+|
+|	VISUAL Mode
+|	------------
+|
+|	Cut/Copy/Paster/Delete
+|	-----------------------
+|		>- 'y' = yank(Copy)
+|		>- 'c' = change(Cut)
+|		>- 'p' = Paster(From Normal Mode)
+|		>- 'd' = delete
+|		>- 'yy' = yank(Copy Entire Line From Nomal Mode)
+|
+|	
+|	UNDO/ REDO/ SET PASTE/
+|	----------------------
+|
+|		>-' u ' = Undo
+|		>-' ctr + r ' = Redo
+|		
+|	Turn OFF AUTO-INDENT
+|		>-- :set paste
+|
+|	
+|	SEARCHING IN VIM
+|	-----------------
+|	
+|	/searchterm = case sensitive
+|	/great >- n next , N for previos
+|	/\csearchthere = case insensitive
+|
+|
++----------------------------------------------------------------------------------------------------------------------------------------+
+|	VIMDIFF >- Comparing 2 files.
+|	-----------------------------
+|		** vimdiff <file1> <file2>
+|		** vim -d <file1> <file2>
+|				file1 on left // file2 on right.
+|
+|	Colors:
+|	-------
+|		Puple = Diff Line
+|		Red = Diff Characters 
+|		Blue = New Block
+|		Teal = Missing Block
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
