@@ -1,0 +1,46 @@
+/*
+
+Changing Text Color
+color : value;
+
+Changing Background Color
+background-color : value;
+
+Changing background
+background: value;
+*/
+
+h2 {
+
+    color: indigo;
+    /*RGB code*/
+    background-color: rgb(2, 161, 158);
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    /*hexdecimal code*/
+    color: #ff3311;
+    background: orange;
+}
+
+/*
+Name colors: green, magenta; Browsers support 140 names colors;
+RGB Colors(Red,Green,Blue)
+*each channel ranges from 0-255
+red >- rgb(255,0,0);
+blue >-  rgb(0,0,255);
+black >- rgb(0,0,0);
+white >- rgb(255,255,255);
+
+HEX Colors
+Hexadecimal Colors: same as RGB BUT represented in hexadecimal;
+#ff     ff      00
+#red   green   blue
+
+Generally use hexcodes;
+*/

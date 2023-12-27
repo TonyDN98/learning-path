@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M5_HTML Tables</title>
+</head>
+<body>
+
+<!--
+HTML Tables
+WHAT ARE TABLES?
+Structured sets of data made up of rows and columns;
+They can be a great way of displaying data clearly;
+
+LOTS OF ELEMENTS!
+To create a table, you will use 5-10 different elements!
+It can be tricky to remember them;
+
+ELEMENTS:
+<table>
+<td>  >- table data (represent a single cell)
+<tr> >- table row
+<th> >- table header
+<thead> >- table header
+<tbody> >- table body
+<tfoot> >- table footer not rly used;
+<rowspan>
+<colspan>
+<caption>
+-->
+
+<h1>Heavies Birds</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Animal</th>
+            <th>Average mass [kg (lb)]</th>
+            <th>Maximum mass [kg (lb)]</th>
+            <th>Flighted</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Common ostrich</td>
+            <td>104 (230)</td>
+            <td>156.8 (346)</td>
+            <td>No</td>
+        </tr>
+
+        <tr>
+            <td>Somali ostrich</td>
+            <td>90 (200)</td>
+            <td>130 (287)</td>
+            <td>No</td>
+        </tr>
+
+        <tr>
+            <td>Domestic turkey/wild turkey</td>
+            <td>13.5 (29.8)</td>
+            <td>39 (86)</td>
+            <td>Yes</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>V2</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th rowspan="2">Animal</th>
+        <th colspan="2">Avarage Mass</th>
+        <th rowspan="2">Flighted</th>
+    </tr>
+    <tr>
+        <th>[kg]</th>
+        <th>(lb)</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Common ostrich</td>
+        <td>104</td>
+        <td>(230)</td>
+        <td>No</td>
+    </tr>
+
+    <tr>
+        <td>Somali ostrich</td>
+        <td>90</td>
+        <td>(200)</td>
+        <td>No</td>
+    </tr>
+
+    <tr>
+        <td>Domestic turkey/wild turkey</td>
+        <td>13.5</td>
+        <td>(29.8)</td>
+        <td>Yes</td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

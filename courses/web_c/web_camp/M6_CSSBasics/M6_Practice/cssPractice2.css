@@ -1,0 +1,19 @@
+/*
+Uppercase all the letters (Google it) v
+set font family monospace v
+center align  text v
+font weight to 100 v
+font size 40px
+spacing between letters 20px
+wavy plum underline
+*/
+
+h1{
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-decoration: plum underline wavy;
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M5_RaceRegistration</title>
+</head>
+<body>
+<h1>Race Registration Form</h1>
+
+<form action="/race">
+    <div>
+    <label for="first_name">Enter FirstName:</label>
+    <input type="text" name="firstName" id="first_name" required minlength="3">
+    </div>
+
+    <div>
+    <label for="last_name">Enter LastName: </label>
+    <input type="text" name="lastName" id="last_name" required minlength="3">
+    </div>
+
+    <div>
+        <p>Select the Race Type:</p>
+    </div>
+
+    <div>
+    <input type="radio" name="racetype" id="fun_run5">
+        <label for="fun_run5">FunRun 5K</label>
+    </div>
+
+    <div>
+    <input type="radio" name="racetype" id="half_marathon">
+        <label for="half_marathon">HALF Marathon</label>
+    </div>
+
+    <div>
+        <input type="radio" name="racetype" id="full_marathon">
+        <label for="full_marathon">FULL Marathon</label>
+    </div>
+    <br>
+
+    <div>
+        <label for="email">E-mail: </label>
+        <input type="email" name="mail_adrr" id="email" required>
+    </div>
+
+    <div>
+        <label for="userpass">Password: </label>
+        <input type="password" name="pass" id="userpass" required minlength="6" maxlength="15">
+    </div>
+
+    <div>
+    <label for="agedropdown">Select age group: </label>
+    <select name="age" id="agedropdown">
+        <option value="" selected>--Select your age--</option>
+        <option value="<18">Under 18</option>
+        <option value=">18">18-50</option>
+        <option value=">50">60-70</option>
+    </select>
+    </div>
+
+    <button>Submit form</button>
+
+
+</form>
+</body>
+</html>

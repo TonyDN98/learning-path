@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hijacking Reddit&Google</title>
+</head>
+<body>
+<h1>Hijacking Reddit&Google</h1>
+
+
+<h3>Search Reddit</h3>
+<form action="https://www.reddit.com/search">
+    <label for="qsearch">Search on Reddit: </label>
+    <input type="text" name="q" id="qsearch" placeholder="Reddit it">
+    <button>Search Reddit</button>
+</form>
+
+
+<h3>Search Google</h3>
+<form action="https://www.google.com/search">
+    <label for="gsearch">Search on Google: </label>
+    <input type="text" name="q" id="gsearch" placeholder="Google it">
+    <button>Search Google</button>
+</form>
+
+
+<h3>Search YT</h3>
+<form action="https://www.youtube.com/results">
+    <label for="tysearch">Search on YT: </label>
+    <input type="text" name="search_query" id="tysearch" placeholder="Search YT">
+    <button>Search YT</button>
+</form>
+
+<!--
+** Checkbox
+checked attribute (if the checkbox will be checked);
+/birds?agree_tos=on
+
+** RadioButtons
+To make a group of radio buttons they need to have the same name;
+To actually send the values when submit the form at a radiobutton group, value attribute must be used
+/radiobuttons?size=s
+-->
+
+
+
+<h2>More Inputs Checkboxs</h2>
+
+<form action="/birds">
+    <label for="agree">I agree to everything</label>
+    <input type="checkbox" name="agree_tos" id="agree" checked >
+    <button>Submit</button>
+    <!-- /birds?agree_tos=on -->
+</form>
+
+
+
+<h2>RadioButtons</h2>
+<form action="/radiobuttons">
+    <label for="xs">XS</label>
+    <input type="radio" name="size" id="xs" value="xs">
+
+    <label for="s">S</label>
+    <input type="radio" name="size" id="s" value="s">
+
+    <label for="m">M</label>
+    <input type="radio" name="size" id="m" value="m">
+
+    <button>Submit size</button>
+    <!-- /radiobuttons?size=s -->
+</form>
+
+
+<!--
+** DropDown elements;
+<select> parent element;
+    <option> child element;
+
+selected attribute(have one option preselected)
+-->
+<form action="/dropdown">
+    <label for="meal">Please select a meal: </label>
+    <select name="meal" id="meal">
+        <option value="">-</option>
+        <option value="fish">Fish</option>
+        <option value="veg">Vedgetarian</option>
+        <option value="steak" selected>Steak</option>
+    </select>
+
+    <button>Submit dropdown</button>
+</form>
+
+
+
+<!-- 
+** Range Input
+min/max attributes to set the min and max values of the range input;
+step attribute to set the step of each range;
+value attribute to set the beginning value of the range;
+-->
+
+<form action="/rangeInput">
+    <label for="range">Ammont of cheese: </label>
+    <input type="range" name="cheeselvl" id="range" min="1" max="10" value="2" >
+    <button>Submit range</button>
+    <!-- http://localhost:63342/rangeInput?cheeselvl=3 -->
+</form>
+
+
+
+<!--
+<textarea>
+multiline text input
+rows/cols for the height
+placeholder placeholder text
+-->
+<form action="/textarea">
+    <label for="request">Any special request here:</label>
+    <textarea name="requestText" id="request" cols="30" rows="10"></textarea>
+    <button>Submit text area</button>
+    <!-- http://localhost:63342/textarea?requestText=ewaewaewa -->
+</form>
+
+
+
+
+<h2>Form Validation</h2>
+
+<form action="\dummy">
+    <label for="first">Enter First Name: </label>
+    <input type="text" name="" id="first" required>
+
+    <label for="username"></label>
+    <input type="text" name="" id="username" minlength="6" max="15" required>
+
+    <label for="email"></label>
+    <input type="email" name="" id="email" required>
+
+    <label for="url"></label>
+    <input type="url" name="" id="url" required>
+    <button>Submit valid</button>
+    
+</form>
+</body>
+</html>
